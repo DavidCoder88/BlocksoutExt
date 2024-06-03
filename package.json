@@ -4,7 +4,7 @@
   "private": false,
   "homepage": "https://github.com/blockscout/frontend#readme",
   "engines": {
-    "node": "20.11.0",
+    "node": "20.11.1",
     "npm": "10.2.4"
   },
   "scripts": {
@@ -13,6 +13,9 @@
     "build": "next build",
     "build:docker": "docker build --build-arg GIT_COMMIT_SHA=$(git rev-parse --short HEAD) --build-arg GIT_TAG=$(git describe --tags --abbrev=0) -t blockscout-frontend:local ./",
     "start": "next start",
+    "start:al": "next start -H 0.0.0.0 -p 8333",
+    "start:server": "pm2 start  pm2.json",
+    "stop:server": "pm2 stop  pm2.json",
     "start:docker:local": "docker run -p 3000:3000 --env-file .env.local blockscout-frontend:local",
     "start:docker:preset": "./tools/scripts/docker.preset.sh",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",

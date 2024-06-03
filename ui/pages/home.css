@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../fonts/NeueHaasDisplayRoman.ttf");
+  /* font-weight: 400; */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parabole";
+  src: url("../fonts/Parabole.ttf");
+  /* font-weight: 400; */
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayMediu";
+  src: url("../fonts/NeueHaasDisplayMediu.ttf");
+  /* font-weight: 400; */
+}
+
+@font-face {
+  font-family: "NeueHaasDisplayLight";
+  src: url("../fonts/NeueHaasDisplayLight.ttf");
+  /* font-weight: 400; */
+}

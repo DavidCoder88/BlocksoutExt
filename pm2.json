@@ -1,0 +1,11 @@
+{
+	"apps": [
+		{
+			"name": "al-browser",
+			"script": "npm",
+			"args": "start:al",
+			"instances": "1",
+			"exec_mode": "cluster"
+		}
+	]
+}

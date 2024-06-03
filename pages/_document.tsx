@@ -43,6 +43,11 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          { /* <link
+            href="/css/fonts.css"
+            rel="stylesheet"
+          /> */ }
+
           { /* eslint-disable-next-line @next/next/no-sync-scripts */ }
           <script src="/assets/envs.js"/>
 

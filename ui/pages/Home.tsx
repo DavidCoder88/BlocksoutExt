@@ -29,6 +29,7 @@ const Home = () => {
         <Flex mb={{ base: 2, lg: 6 }} justifyContent="space-between" alignItems="center">
           <Heading
             as="h1"
+            fontFamily="Parabole"
             fontSize={{ base: '18px', lg: '40px' }}
             lineHeight={{ base: '24px', lg: '48px' }}
             fontWeight={ 600 }
