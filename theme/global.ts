@@ -11,8 +11,9 @@ const global = (props: StyleFunctionProps) => ({
     ...getDefaultTransitionProps(),
     '-webkit-tap-highlight-color': 'transparent',
     'font-variant-ligatures': 'no-contextual',
-    'font-family': `Parabole, NeueHaasDisplayMediu, NeueHaasDisplayLight, -apple-system, ` +
-      `BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`,
+    'font-family': 'Neue Haas Grotesk Display Pro',
+    // 'font-family': `Parabole, NeueHaasDisplayMediu, NeueHaasDisplayLight, -apple-system, ` +
+    //   `BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`,
     '-webkit-font-smoothing': 'antialiased',
     '-moz-osx-font-smoothing': 'grayscale',
   },

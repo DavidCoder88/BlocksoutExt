@@ -21,6 +21,7 @@ const TopBar = () => {
       alignItems="center"
     >
       <TopBarStats/>
+      Adventure Top Bar施工中。。。
       <Flex alignItems="center">
         { feature.isEnabled && (
           <>

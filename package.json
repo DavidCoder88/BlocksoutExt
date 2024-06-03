@@ -13,7 +13,7 @@
     "build": "next build",
     "build:docker": "docker build --build-arg GIT_COMMIT_SHA=$(git rev-parse --short HEAD) --build-arg GIT_TAG=$(git describe --tags --abbrev=0) -t blockscout-frontend:local ./",
     "start": "next start",
-    "start:al": "next start -H 0.0.0.0 -p 8333",
+    "start:al": "next start -H 0.0.0.0 -p 8535",
     "start:server": "pm2 start  pm2.json",
     "stop:server": "pm2 stop  pm2.json",
     "start:docker:local": "docker run -p 3000:3000 --env-file .env.local blockscout-frontend:local",

@@ -15,6 +15,8 @@ import WalletMenuDesktop from 'ui/snippets/walletMenu/WalletMenuDesktop';
 const rollupFeature = config.features.rollup;
 
 const Home = () => {
+  const logoFont = `Parabole, NeueHaasDisplayMediu, NeueHaasDisplayLight, -apple-system, BlinkMacSystemFont, ` +
+    `Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`;
   return (
     <Box as="main">
       <Box
@@ -29,7 +31,7 @@ const Home = () => {
         <Flex mb={{ base: 2, lg: 6 }} justifyContent="space-between" alignItems="center">
           <Heading
             as="h1"
-            fontFamily="Parabole"
+            fontFamily={ logoFont }
             fontSize={{ base: '18px', lg: '40px' }}
             lineHeight={{ base: '24px', lg: '48px' }}
             fontWeight={ 600 }

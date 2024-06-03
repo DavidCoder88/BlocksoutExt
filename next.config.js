@@ -43,6 +43,7 @@ const moduleExports = {
   rewrites,
   redirects,
   headers,
+  crossOrigin: 'anonymous',
   output: 'standalone',
   productionBrowserSourceMaps: true,
   experimental: {
