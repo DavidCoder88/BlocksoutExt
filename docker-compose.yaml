@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  geth:
+    build: .
+    ports:
+      - "8535:3000"
+    env_file:
+      - path: ./.env.al
+        required: false
+      - path: ./.env.local
+        required: false
+    volumes:
+      - "./.env.al:/app/.env.local"
+    # entrypoint: /usr/local/bin/geth
+    # command:

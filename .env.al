@@ -1,0 +1,35 @@
+NEXT_PUBLIC_API_HOST=54.81.18.76
+NEXT_PUBLIC_API_PORT=8534
+NEXT_PUBLIC_API_BASE_PATH=/
+NEXT_PUBLIC_API_PROTOCOL=http
+NEXT_PUBLIC_API_WEBSOCKET_PROTOCOL=ws
+NEXT_PUBLIC_STATS_API_HOST=http://54.81.18.76:8571
+NEXT_PUBLIC_VISUALIZE_API_HOST=http://54.81.18.76:8572
+
+NEXT_PUBLIC_APP_HOST=54.81.18.76
+NEXT_PUBLIC_APP_PORT=8535
+# NEXT_PUBLIC_APP_INSTANCE=54.81.18.76
+# NEXT_PUBLIC_APP_ENV=development
+NEXT_PUBLIC_NETWORK_ID=412346
+
+# ui config
+NEXT_PUBLIC_NETWORK_NAME=Adventurelayer
+NEXT_PUBLIC_NETWORK_SHORT_NAME=Adventure Layer
+NEXT_PUBLIC_COLOR_THEME_DEFAULT=light
+
+## homepage
+#NEXT_PUBLIC_HOMEPAGE_CHARTS=['daily_txs']
+NEXT_PUBLIC_HOMEPAGE_PLATE_BACKGROUND=rgba(255, 165, 0,200)
+NEXT_PUBLIC_HOMEPAGE_PLATE_TEXT_COLOR=rgba(0,0,0,255)
+## sidebar
+NEXT_PUBLIC_FEATURED_NETWORKS=https://raw.githubusercontent.com/blockscout/frontend-configs/main/configs/featured-networks/optimism-mainnet.json
+NEXT_PUBLIC_NETWORK_LOGO=http://54.81.18.76:8558/images/Logo.svg
+NEXT_PUBLIC_NETWORK_LOGO_DARK=http://54.81.18.76:8558/images/Logo.svg
+NEXT_PUBLIC_NETWORK_ICON=http://54.81.18.76:8558/images/Logo.svg
+NEXT_PUBLIC_NETWORK_ICON_DARK=http://54.81.18.76:8558/images/Logo.svg
+#NEXT_PUBLIC_OTHER_LINKS=[{'url':'https://sepolia.drpc.org?ref=559183','text':'Public RPC'}]
+## footer
+# NEXT_PUBLIC_FOOTER_LINKS=https://raw.githubusercontent.com/blockscout/frontend-configs/main/configs/footer-links/optimism.json
+## ads
+NEXT_PUBLIC_AD_BANNER_PROVIDER=none
+
