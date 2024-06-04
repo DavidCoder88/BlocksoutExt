@@ -4,8 +4,10 @@ import type { NextPageWithLayout } from 'nextjs/types';
 
 import PageNextJs from 'nextjs/PageNextJs';
 
-import Home from 'ui/pages/Home';
-import LayoutHome from 'ui/shared/layout/LayoutHome';
+// import Home from 'ui/pages/Home';
+import Home from 'ui/pages/Home.al';
+// import LayoutHome from 'ui/shared/layout/LayoutHome';
+import LayoutHome from 'ui/shared/layout/LayoutHome.al';
 
 const Page: NextPageWithLayout = () => {
   return (

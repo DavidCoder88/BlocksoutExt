@@ -1,5 +1,7 @@
 import Footer from 'ui/snippets/footer/Footer';
+import FooterAl from 'ui/snippets/footer/Footer.al';
 import TopRow from 'ui/snippets/topBar/TopBar';
+import TopRowAl from 'ui/snippets/topBar/TopBar.al';
 
 import Container from './Container';
 import Content from './Content';
@@ -14,7 +16,9 @@ export {
   SideBar,
   MainColumn,
   Footer,
+  FooterAl,
   TopRow,
+  TopRowAl,
 };
 
 // Container
