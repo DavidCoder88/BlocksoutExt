@@ -54,7 +54,7 @@ const Home = () => {
       <Stats/>
       <ChainIndicators/>
       <AdBanner mt={ 6 } mx="auto" display="flex" justifyContent="center"/>
-      <Flex mt={ 6 } direction={{ base: 'column', lg: 'row' }} columnGap={ 12 } rowGap={ 6 } paddingX={{ base: 3, lg: 12 }}>
+      <Flex mt={ 6 } direction={{ base: 'column', lg: 'row' }} columnGap={ 12 } rowGap={ 6 } paddingX={{ base: 4, lg: 10 }}>
         { !disableLatestBlocks && (rollupFeature.isEnabled && rollupFeature.type === 'zkEvm' ? <LatestZkEvmL2Batches/> : <LatestBlocks/>) }
         <Box flexGrow={ 1 }>
           <Transactions/>

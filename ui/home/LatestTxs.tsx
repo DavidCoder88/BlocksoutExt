@@ -11,7 +11,8 @@ import { TX } from 'stubs/tx';
 import LinkInternal from 'ui/shared/links/LinkInternal';
 import SocketNewItemsNotice from 'ui/shared/SocketNewItemsNotice';
 
-import LatestTxsItem from './LatestTxsItem';
+// import LatestTxsItem from './LatestTxsItem';
+import LatestTxsItem from './LatestTxsItem.al';
 import LatestTxsItemMobile from './LatestTxsItemMobile';
 
 const LatestTransactions = () => {

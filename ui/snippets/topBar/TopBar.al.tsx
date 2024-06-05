@@ -13,6 +13,7 @@ import {
   MenuList,
   MenuItem,
   Skeleton,
+  Icon,
   // Avatar,
   // IconButton,
   // Center,
@@ -83,9 +84,9 @@ const AdventureLogo = ({ isCollapsed, onClick, className }: Props) => {
       width={{ base: '120px', lg: isCollapsed === false ? '120px' : '30px', xl: isCollapsed ? '30px' : '120px' }}
       height={{ base: '24px', lg: isCollapsed === false ? '24px' : '30px', xl: isCollapsed ? '30px' : '24px' }}
       display="inline-flex"
-      overflow="hidden"
+      // overflow="hidden"
       onClick={ onClick }
-      flexShrink={ 0 }
+      // flexShrink={ 0 }
       aria-label="Link to main page"
     >
       { /* big logo */ }
@@ -112,6 +113,12 @@ const AdventureLogo = ({ isCollapsed, onClick, className }: Props) => {
   );
 };
 
+const DropDownIcon = (props: any) => (
+  <Icon width="9" height="6" viewBox="0 0 9 6" fill="none" { ...props }>
+    <path d="M8 1.5L4.5 5L1 1.5" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </Icon>
+);
+
 const TopBar = () => {
   const bgColor = useColorModeValue('white.50', 'whiteAlpha.100');
 
@@ -126,7 +133,7 @@ const TopBar = () => {
     >
       <AdventureLogo isCollapsed={ false }/>
       { /* <TopBarStats/> */ }
-      <Stack direction="row" spacing={ 6 }>
+      <Stack direction="row" spacing={{ base: 4, lg: 6 }}>
         <Link
           alignSelf="center" fontSize="14px" fontWeight={ 600 } color="#000"
           textDecoration="none" _hover={{ color: '#000', textDecoration: 'none' }}
@@ -138,7 +145,12 @@ const TopBar = () => {
           textDecoration="none" _hover={{ color: '#000', textDecoration: 'none' }}
           href="/token">Token</Link>
         <Menu>
-          <MenuButton fontSize="14px" color="#000" background="#fff" _hover={{ background: '#fff' }} as={ Button }>APIs</MenuButton>
+          <MenuButton paddingX={ 0 }
+            fontSize="14px" color="#000" background="#fff" _hover={{ background: '#fff' }}
+            as={ Button }>
+              APIs
+            <DropDownIcon width="2" marginLeft="1"/>
+          </MenuButton>
           <MenuList>
             <MenuItem>API 1</MenuItem>
             <MenuItem>API 2</MenuItem>
