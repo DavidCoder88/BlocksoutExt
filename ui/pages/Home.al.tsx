@@ -5,7 +5,7 @@ import config from 'configs/app';
 import ChainIndicators from 'ui/home/indicators/ChainIndicators';
 import LatestBlocks from 'ui/home/LatestBlocks';
 import LatestZkEvmL2Batches from 'ui/home/LatestZkEvmL2Batches';
-import Stats from 'ui/home/Stats';
+import Stats from 'ui/home/Stats.al';
 import Transactions from 'ui/home/Transactions';
 import AdBanner from 'ui/shared/ad/AdBanner';
 import ProfileMenuDesktop from 'ui/snippets/profileMenu/ProfileMenuDesktop';
