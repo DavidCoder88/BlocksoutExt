@@ -21,7 +21,8 @@ import useNotifyOnNavigation from 'lib/hooks/useNotifyOnNavigation';
 import { SocketProvider } from 'lib/socket/context';
 import AppErrorBoundary from 'ui/shared/AppError/AppErrorBoundary';
 import GoogleAnalytics from 'ui/shared/GoogleAnalytics';
-import Layout from 'ui/shared/layout/Layout';
+// import Layout from 'ui/shared/layout/Layout';
+import Layout from 'ui/shared/layout/Layout.al';
 import Web3ModalProvider from 'ui/shared/Web3ModalProvider';
 
 import 'lib/setLocale';

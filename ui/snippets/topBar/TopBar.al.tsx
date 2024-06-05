@@ -1,13 +1,14 @@
 import {
   Box,
   Image,
+  Text,
   Flex,
   Link,
   Stack,
   Divider,
   useColorModeValue,
   // useDisclosure,
-  Button,
+  // Button,
   Menu,
   MenuButton,
   MenuList,
@@ -24,11 +25,11 @@ import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
 import IconSvg from 'ui/shared/IconSvg';
+import NavLinkIcon from 'ui/snippets/navigation/NavLinkIcon';
 
 import DeFiDropdown from './DeFiDropdown';
 import Settings from './settings/Settings';
 // import TopBarStats from './TopBarStats';
-// import NetworkLogo from 'ui/snippets/networkMenu/NetworkLogo';
 
 const feature = config.features.deFiDropdown;
 
@@ -65,6 +66,21 @@ const LogoFallback = ({ isCollapsed, isSmall }: { isCollapsed?: boolean; isSmall
       display={ display }
     />
   );
+};
+
+const apiNavMenuItems = {
+  respApi: {
+    text: 'REST API',
+    nextRoute: { pathname: '/api-docs' as const },
+    icon: 'restAPI',
+    isActive: false,
+  },
+  graphQL: {
+    text: 'GraphQL',
+    nextRoute: { pathname: '/graphiql' as const },
+    icon: 'graphQL',
+    isActive: false,
+  },
 };
 
 const AdventureLogo = ({ isCollapsed, onClick, className }: Props) => {
@@ -143,17 +159,25 @@ const TopBar = () => {
           href="/txs">Transactions</Link>
         <Link alignSelf="center" fontSize="14px" fontWeight={ 600 } color="#000"
           textDecoration="none" _hover={{ color: '#000', textDecoration: 'none' }}
-          href="/token">Token</Link>
+          href="/tokens">Token</Link>
         <Menu>
           <MenuButton paddingX={ 0 }
-            fontSize="14px" color="#000" background="#fff" _hover={{ background: '#fff' }}
-            as={ Button }>
+            fontSize="14px" fontWeight={ 600 }
+            color="#000" background="#fff" _hover={{ background: '#fff' }}>
               APIs
             <DropDownIcon width="2" marginLeft="1"/>
           </MenuButton>
           <MenuList>
-            <MenuItem>API 1</MenuItem>
-            <MenuItem>API 2</MenuItem>
+            <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+              href="/api-docs">
+              <NavLinkIcon item={ apiNavMenuItems.respApi }/>
+              <Text marginLeft={ 1 }>Rest API</Text>
+            </MenuItem>
+            <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+              href="/graphiql">
+              <NavLinkIcon item={ apiNavMenuItems.graphQL }/>
+              <Text marginLeft={ 1 }>GraphQL</Text>
+            </MenuItem>
             { /* 根据需要添加更多二级菜单项 */ }
           </MenuList>
         </Menu>
