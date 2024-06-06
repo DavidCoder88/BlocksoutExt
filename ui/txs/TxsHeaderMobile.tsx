@@ -7,7 +7,7 @@ import type { PaginationParams } from 'ui/shared/pagination/types';
 // import FilterInput from 'ui/shared/filters/FilterInput';
 
 import ActionBar from 'ui/shared/ActionBar';
-import Pagination from 'ui/shared/pagination/Pagination';
+import Pagination from 'ui/shared/pagination/Pagination.al';
 import Sort from 'ui/shared/sort/Sort';
 
 import { SORT_OPTIONS } from './useTxsSort';

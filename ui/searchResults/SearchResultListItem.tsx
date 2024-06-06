@@ -14,7 +14,7 @@ import { ADDRESS_REGEXP } from 'lib/validations/address';
 import ContractCertifiedLabel from 'ui/shared/ContractCertifiedLabel';
 import * as AddressEntity from 'ui/shared/entities/address/AddressEntity';
 import * as BlobEntity from 'ui/shared/entities/blob/BlobEntity';
-import * as BlockEntity from 'ui/shared/entities/block/BlockEntity';
+import * as BlockEntity from 'ui/shared/entities/block/BlockEntity.al';
 import * as EnsEntity from 'ui/shared/entities/ens/EnsEntity';
 import * as TokenEntity from 'ui/shared/entities/token/TokenEntity';
 import * as TxEntity from 'ui/shared/entities/tx/TxEntity';

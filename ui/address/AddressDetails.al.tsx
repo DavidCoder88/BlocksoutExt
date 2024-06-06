@@ -6,7 +6,7 @@ import config from 'configs/app';
 import throwOnResourceLoadError from 'lib/errors/throwOnResourceLoadError';
 import useIsMounted from 'lib/hooks/useIsMounted';
 import getQueryParamString from 'lib/router/getQueryParamString';
-import AddressCounterItem from 'ui/address/details/AddressCounterItem';
+import AddressCounterItem from 'ui/address/details/AddressCounterItem.al';
 import ServiceDegradationWarning from 'ui/shared/alerts/ServiceDegradationWarning';
 import isCustomAppError from 'ui/shared/AppError/isCustomAppError';
 import DataFetchAlert from 'ui/shared/DataFetchAlert';
@@ -176,7 +176,7 @@ const AddressDetails = ({ addressQuery, scrollRef }: Props) => {
             >
               Transfers
             </DetailsInfoItem.Label>
-            <DetailsInfoItem.Value>
+            <DetailsInfoItem.Value color="#F39B4B">
               { addressQuery.data ? (
                 <AddressCounterItem
                   prop="token_transfers_count"

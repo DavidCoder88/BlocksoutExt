@@ -6,7 +6,7 @@ import React, { useEffect, useRef } from 'react';
 
 import type { RoutedTab } from './types';
 
-import TabsWithScroll from './TabsWithScroll';
+import TabsWithScroll from './TabsWithScroll.al';
 import useTabIndexFromQuery from './useTabIndexFromQuery';
 
 interface Props extends ThemingProps<'Tabs'> {

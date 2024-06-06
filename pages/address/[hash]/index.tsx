@@ -10,7 +10,7 @@ import fetchApi from 'nextjs/utils/fetchApi';
 
 import config from 'configs/app';
 import getQueryParamString from 'lib/router/getQueryParamString';
-import Address from 'ui/pages/Address';
+import Address from 'ui/pages/Address.al';
 
 const pathname: Route['pathname'] = '/address/[hash]';
 

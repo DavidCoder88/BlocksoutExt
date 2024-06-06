@@ -14,7 +14,7 @@ import getNextSortValue from 'ui/shared/sort/getNextSortValue';
 import useDescribeTxs from './noves/useDescribeTxs';
 import TxsHeaderMobile from './TxsHeaderMobile';
 import TxsList from './TxsList';
-import TxsTable from './TxsTable';
+import TxsTable from './TxsTable.al';
 
 const SORT_SEQUENCE: Record<TransactionsSortingField, Array<TransactionsSortingValue | undefined>> = {
   value: [ 'value-desc', 'value-asc', undefined ],

@@ -6,7 +6,7 @@ import type { PaginationParams } from 'ui/shared/pagination/types';
 import useApiQuery from 'lib/api/useApiQuery';
 import { nbsp } from 'lib/html-entities';
 import { HOMEPAGE_STATS } from 'stubs/stats';
-import Pagination from 'ui/shared/pagination/Pagination';
+import Pagination from 'ui/shared/pagination/Pagination.al';
 
 interface Props {
   pagination: PaginationParams;
