@@ -38,14 +38,16 @@ export const updatePublicApi = (obj: any) => {
   api.port = obj.port;
   api.endpoint = obj.endpoint;
   api.socket = obj.socket;
+  api.basePath = obj.basePath;
 };
 
 // console.log('Load public API')
+let sn: string | null = 'l2';
 if (typeof window !== 'undefined') {
-  const sn = localStorage.getItem('al_network');
-  if (sn && sn in alNetworkConfig) {
-    updatePublicApi(alNetworkConfig[sn]);
-  }
+  sn = localStorage.getItem('al_network');
+}
+if (sn && sn in alNetworkConfig) {
+  updatePublicApi(alNetworkConfig[sn]);
 }
 
 export default api;
