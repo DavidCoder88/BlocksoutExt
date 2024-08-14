@@ -155,9 +155,9 @@ const TopBar = () => {
   const handleSwitchShard1 = function() {
     return handleChangeNetwork('shard1');
   };
-  const handleSwitchShard2 = function() {
-    return handleChangeNetwork('shard2');
-  };
+  // const handleSwitchShard2 = function() {
+  //   return handleChangeNetwork('shard2');
+  // };
 
   return (
     <Flex
@@ -224,14 +224,12 @@ const TopBar = () => {
               { /* <NavLinkIcon item={ apiNavMenuItems.graphQL }/> */ }
               <Text marginLeft={ 1 }>Shard 1</Text>
             </MenuItem>
-            <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+            { /* <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
               // eslint-disable-next-line react/jsx-no-bind
               onClick={ handleSwitchShard2 }
               href="#">
-              { /* <NavLinkIcon item={ apiNavMenuItems.graphQL }/> */ }
               <Text marginLeft={ 1 }>Shard 2</Text>
-            </MenuItem>
-            { /* 根据需要添加更多二级菜单项 */ }
+            </MenuItem> */ }
           </MenuList>
         </Menu>
       </Stack>

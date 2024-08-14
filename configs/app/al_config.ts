@@ -3,29 +3,29 @@
 // 52.90.225.30:8588 对应链： chainid：12340112, http://3.84.203.161:8557  ws://3.84.203.161:8558
 export const alNetworkConfig: any = {
   l2: {
-    host: 'explorer-devnet.adventurelayer.dev',
+    host: 'explorer-devnet.adventurelayer.xyz',
     protocol: 'https',
     port: '',
-    endpoint: 'https://explorer-devnet.adventurelayer.dev',
-    socket: 'wss://explorer-devnet.adventurelayer.dev',
+    endpoint: 'https://explorer-devnet.adventurelayer.xyz',
+    socket: 'wss://explorer-devnet.adventurelayer.xyz',
     basePath: '/l2',
   },
   shard1: {
-    host: 'explorer-devnet.adventurelayer.dev',
+    host: 'explorer-devnet.adventurelayer.xyz',
     protocol: 'https',
     port: '',
-    endpoint: 'https://explorer-devnet.adventurelayer.dev',
-    socket: 'wss://explorer-devnet.adventurelayer.dev',
+    endpoint: 'https://explorer-devnet.adventurelayer.xyz',
+    socket: 'wss://explorer-devnet.adventurelayer.xyz',
     basePath: '/shard1',
   },
-  shard2: {
-    host: 'explorer-devnet.adventurelayer.dev',
-    protocol: 'https',
-    port: '',
-    endpoint: 'https://explorer-devnet.adventurelayer.dev',
-    socket: 'wss://explorer-devnet.adventurelayer.dev',
-    basePath: '/shard2',
-  },
+  // shard2: {
+  //   host: 'explorer-devnet.adventurelayer.xyz',
+  //   protocol: 'https',
+  //   port: '',
+  //   endpoint: 'https://explorer-devnet.adventurelayer.xyz',
+  //   socket: 'wss://explorer-devnet.adventurelayer.xyz',
+  //   basePath: '/shard2',
+  // },
   // l2: {
   //   host: '52.206.132.165',
   //   protocol: 'http',
