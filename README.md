@@ -10,22 +10,57 @@
 
 Blockscout Frontend is a modern web application that serves as the user interface for the Blockscout blockchain explorer. It provides a comprehensive interface for exploring blockchain data, transactions, smart contracts, and more.
 
+## Core Features & Functionality
+
+### Blockchain Data Exploration
+- **Block Explorer**: View detailed information about blocks, transactions, and addresses
+- **Real-time Updates**: Live tracking of new blocks and transactions
+- **Advanced Search**: Search by block number, transaction hash, address, or token
+
+### Smart Contract Tools
+- **Contract Verification**: Verify and publish smart contract source code
+- **Contract Interaction**: Read and write contract functions through the UI
+- **Custom ABI Management**: Save and manage custom contract ABIs
+- **Source Code Viewer**: Browse verified contract source code with syntax highlighting
+
+### Account Management
+- **Watchlist**: Track addresses and transactions of interest
+- **API Key Management**: Generate and manage API keys for data access
+- **Address Tags**: Create private tags for easy address identification
+- **Address Verification**: Verify ownership of blockchain addresses
+
+### Token Features
+- **Token Lists**: View all tokens on the network
+- **Token Transfers**: Track token transfer history
+- **Token Info**: Detailed token information including holders and transactions
+- **NFT Support**: Browse NFT collections and individual tokens
+
+### Developer Tools
+- **API Documentation**: Interactive API documentation with Swagger UI
+- **GraphQL Interface**: Built-in GraphQL explorer
+- **Metrics & Monitoring**: Prometheus metrics endpoint for monitoring
+- **Logging System**: Comprehensive request and error logging
+
 ## Directory Structure
 
 ```
 blockscout-frontend/
-├── configs/         # Configuration files and environment presets
-├── deploy/          # Deployment configurations and scripts
-├── docs/           # Project documentation
-├── icons/          # SVG icons source files
-├── jest/           # Jest test utilities and configurations
-├── playwright/     # Playwright test configurations
-├── public/         # Static assets
-│   ├── assets/    # Dynamic assets generated during build
-│   ├── icons/     # Compiled SVG sprite
-│   └── static/    # Static files
-├── tools/          # Development and build tools
-└── ui/            # React components and UI logic
+├── pages/          # Next.js pages and API routes
+│   ├── account/   # Account management features
+│   ├── api/       # API endpoints and proxies
+│   ├── block/     # Block explorer pages
+│   └── tx/        # Transaction pages
+├── ui/            # React components and pages
+│   ├── shared/    # Reusable components
+│   ├── pages/     # Page-specific components
+│   └── theme/     # UI theming and styles
+├── lib/           # Core business logic
+│   ├── api/       # API integration
+│   ├── token/     # Token-related logic
+│   └── web3/      # Blockchain interaction
+├── configs/       # Configuration files
+├── public/        # Static assets
+└── tools/         # Development tools
 ```
 
 ## Key Features
