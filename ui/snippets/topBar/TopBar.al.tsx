@@ -24,6 +24,8 @@ import React from 'react';
 import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
+import { alNetworkConfig } from 'configs/app/al_config';
+import { updatePublicApi } from 'configs/app/api';
 import IconSvg from 'ui/shared/IconSvg';
 import NavLinkIcon from 'ui/snippets/navigation/NavLinkIcon';
 
@@ -138,6 +140,25 @@ const DropDownIcon = (props: any) => (
 const TopBar = () => {
   const bgColor = useColorModeValue('white.50', 'whiteAlpha.100');
 
+  const handleChangeNetwork = (name: string) => {
+    if (name in alNetworkConfig) {
+      updatePublicApi(alNetworkConfig[name]);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('al_network', name);
+      }
+      window.location.reload();
+    }
+  };
+  const handleSwitchL2 = function() {
+    return handleChangeNetwork('l2');
+  };
+  const handleSwitchShard1 = function() {
+    return handleChangeNetwork('shard1');
+  };
+  // const handleSwitchShard2 = function() {
+  //   return handleChangeNetwork('shard2');
+  // };
+
   return (
     <Flex
       py={ 2 }
@@ -179,6 +200,36 @@ const TopBar = () => {
               <Text marginLeft={ 1 }>GraphQL</Text>
             </MenuItem>
             { /* 根据需要添加更多二级菜单项 */ }
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton paddingX={ 0 }
+            fontSize="14px" fontWeight={ 600 }
+            color="#000" background="#fff" _hover={{ background: '#fff' }}>
+              Networks
+            <DropDownIcon width="2" marginLeft="1"/>
+          </MenuButton>
+          <MenuList>
+            <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+              // eslint-disable-next-line react/jsx-no-bind
+              onClick={ handleSwitchL2 }
+              href="#">
+              { /* <NavLinkIcon item={ apiNavMenuItems.respApi }/> */ }
+              <Text marginLeft={ 1 }>L2</Text>
+            </MenuItem>
+            <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+              // eslint-disable-next-line react/jsx-no-bind
+              onClick={ handleSwitchShard1 }
+              href="#">
+              { /* <NavLinkIcon item={ apiNavMenuItems.graphQL }/> */ }
+              <Text marginLeft={ 1 }>Shard 1</Text>
+            </MenuItem>
+            { /* <MenuItem fontSize="14px" fontWeight={ 600 } as="a"
+              // eslint-disable-next-line react/jsx-no-bind
+              onClick={ handleSwitchShard2 }
+              href="#">
+              <Text marginLeft={ 1 }>Shard 2</Text>
+            </MenuItem> */ }
           </MenuList>
         </Menu>
       </Stack>
