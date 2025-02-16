@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Adventure Layer Blockscout frontend is a modern web application that serves as the user interface for the Blockscout blockchain explorer. It provides a comprehensive interface for exploring blockchain data, transactions, smart contracts, and more.
+Adventure Layer Blockscout frontend update to the Blockscout-based browser frontend focuses on improving user interface (UI) elements to enhance the user experience, making it more intuitive and visually appealing. One of the key improvements is the integration of AGLD token conversion, which allows users to view and interact with the exchange rates of AGLD in various denominations, facilitating smoother interactions with the token across different platforms. Furthermore, the update includes the ability to switch seamlessly between different versions of the browser, providing users with greater flexibility when navigating between different environments or instances of the Blockscout interface. These changes aim to streamline the overall functionality and performance of the platform, ensuring that users can access token-related information and perform transactions more efficiently.
 
 ## Core Features & Functionality
 
