@@ -1,14 +1,8 @@
-<h1 align="center">Blockscout frontend</h1>
-
-<p align="center">
-    <span>Frontend application for </span>
-    <a href="https://github.com/blockscout/blockscout/blob/master/README.md">Blockscout</a>
-    <span> blockchain explorer</span>
-</p>
+# Adventure Layer Blockscout frontend
 
 ## Project Overview
 
-Blockscout Frontend is a modern web application that serves as the user interface for the Blockscout blockchain explorer. It provides a comprehensive interface for exploring blockchain data, transactions, smart contracts, and more.
+Adventure Layer Blockscout frontend is a modern web application that serves as the user interface for the Blockscout blockchain explorer. It provides a comprehensive interface for exploring blockchain data, transactions, smart contracts, and more.
 
 ## Core Features & Functionality
 
